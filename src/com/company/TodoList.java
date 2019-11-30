@@ -2,8 +2,13 @@ package com.company;
 
 public class TodoList {
 
+    int id = 0;
     String name = "";
-    TodoManager manager = new TodoManager();
+    TodoManager manager;
+
+    public TodoList() {
+
+    }
 
     public void setManager(TodoManager manager) {
         this.manager = manager;
@@ -21,4 +26,11 @@ public class TodoList {
         return name;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }

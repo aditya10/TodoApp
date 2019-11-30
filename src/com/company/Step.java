@@ -7,6 +7,13 @@ public class Step {
     int difficultyRating = 5;
     boolean isStepComplete = false;
 
+    public Step(int stepId, String content, int difficultyRating, boolean isStepComplete) {
+        this.stepId = stepId;
+        this.content = content;
+        this.difficultyRating = difficultyRating;
+        this.isStepComplete = isStepComplete;
+    }
+
     public int getStepId() {
         return stepId;
     }

@@ -4,9 +4,18 @@ import java.util.ArrayList;
 
 public class Todo implements Task {
 
-    ArrayList<Step> steps = new ArrayList<Step>();
-    String location = "";
-    boolean isComplete = false;
+    int taskId;
+    String taskName;
+    ArrayList<Step> steps;
+    String location;
+
+    public Todo(int taskId, String taskName, ArrayList<Step> steps, String location) {
+        this.taskId = taskId;
+        this.taskName = taskName;
+        this.steps = steps;
+        this.location = location;
+    }
+
 
     public ArrayList<Step> getSteps() {
         return steps;
@@ -25,31 +34,32 @@ public class Todo implements Task {
     }
 
     public boolean isComplete() {
-        return isComplete;
-    }
-
-    public void setComplete(boolean complete) {
-        isComplete = complete;
+        for (int i = 0; i < steps.size(); i++) {
+            if (!steps.get(i).isStepComplete()){
+                return false;
+            }
+        }
+        return true;
     }
 
 
     @Override
     public int getTaskId() {
-        return 0;
+        return taskId;
     }
 
     @Override
     public String getTaskName() {
-        return null;
+        return taskName;
     }
 
     @Override
-    public void setTaskId() {
-
+    public void setTaskId(int taskId) {
+        this.taskId = taskId;
     }
 
     @Override
-    public void setTaskName() {
-
+    public void setTaskName(String taskName) {
+        this.taskName = taskName;
     }
 }

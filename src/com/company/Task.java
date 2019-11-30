@@ -2,13 +2,10 @@ package com.company;
 
 public interface Task {
 
-    int taskId = 0;
-    String taskName = "";
-
     int getTaskId();
-    void setTaskId();
+    void setTaskId(int taskId);
 
     String getTaskName();
-    void setTaskName();
+    void setTaskName(String taskName);
 
 }

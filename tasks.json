@@ -1,0 +1,78 @@
+[
+  {
+    "id" : 1,
+    "name": "List 1",
+    "todos" : [
+      {
+        "taskname" : "todo task 1",
+        "taskid" : 11,
+        "steps" : [
+          {
+            "stepId" : 111,
+            "stepContent": "this is step 1",
+            "difficulty": 3,
+            "stepCompleted": false
+          },
+          {
+            "stepId" : 112,
+            "stepContent": "this is step 2",
+            "difficulty": 1,
+            "stepCompleted": true
+          },
+          {
+            "stepId" : 113,
+            "stepContent": "this is step 3",
+            "difficulty": 5,
+            "stepCompleted": false
+          }
+        ],
+        "location": "UBC"
+      }
+    ]
+  },
+  {
+    "id" : 2,
+    "name": "List 2",
+    "todos" : [
+      {
+        "taskname" : "todo list 2 todo 1",
+        "taskid" : 21,
+        "steps" : [
+          {
+            "stepId" : 211,
+            "stepContent": "this is step 1",
+            "difficulty": 4,
+            "stepCompleted": true
+          },
+          {
+            "stepId" : 212,
+            "stepContent": "this is step 2",
+            "difficulty": 1,
+            "stepCompleted": true
+          },
+          {
+            "stepId" : 113,
+            "stepContent": "this is step 3",
+            "difficulty": 2,
+            "stepCompleted": true
+          }
+        ],
+        "location": "Vancouver",
+        "completed": true
+      },
+      {
+        "taskname" : "todo list 2 todo 2",
+        "taskid" : 22,
+        "steps" : [
+          {
+            "stepId" : 221,
+            "stepContent": "this is step 1",
+            "difficulty": 2,
+            "stepCompleted": false
+          }
+        ],
+        "location": "Vancouver"
+      }
+    ]
+  }
+]
