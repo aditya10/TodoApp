@@ -6,8 +6,8 @@ public class TodoList {
     String name = "";
     TodoManager manager;
 
-    public TodoList() {
-
+    public TodoList(TodoManager manager) {
+        this.manager = manager;
     }
 
     public void setManager(TodoManager manager) {

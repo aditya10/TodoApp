@@ -45,11 +45,11 @@ public class TodoListManager {
         }
 
         for (int i = 0; i < jsonTodoLists.size(); i++) {
-            TodoList t = new TodoList();
             JSONObject currList = (JSONObject) jsonTodoLists.get(i);
-            t.id = ((Long) currList.get("id")).intValue();
-            t.name = (String) currList.get("name");
-            t.manager = new TodoManager((JSONArray) currList.get("todos"));
+            TodoManager manager = new TodoManager((JSONArray) currList.get("todos"));
+            TodoList t = new TodoList(manager);
+            t.setId(((Long) currList.get("id")).intValue());
+            t.setName(((String) currList.get("name")).concat(" -- List " + t.getId()));
             todoLists.add(t);
         }
     }

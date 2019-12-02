@@ -1,7 +1,6 @@
 [
   {
     "id" : 1,
-    "name": "Some worklist",
     "todos" : [
       {
         "taskname" : "todo task 1",
@@ -32,7 +31,7 @@
   },
   {
     "id" : 2,
-    "name": "List 2",
+    "name": "Some other worklist",
     "todos" : [
       {
         "taskname" : "todo list 2 todo 1",

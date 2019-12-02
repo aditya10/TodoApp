@@ -41,4 +41,12 @@ public class Main {
         }
         return null;
     }
+
+    public static void printTodoLocation(Object obj){
+        if (obj instanceof Todo) {
+            Todo todo = (Todo) obj;
+            System.out.println(todo.getLocation());
+        }
+
+    }
 }
