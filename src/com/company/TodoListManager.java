@@ -17,11 +17,11 @@ public class TodoListManager {
     }
 
     public void createList() {
-
+        //Ignored for simplicity
     }
 
     public void deleteList() {
-
+        //Ignored for simplicity
     }
 
     public ArrayList<TodoList> getTodoLists() {

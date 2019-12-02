@@ -55,19 +55,19 @@ public class TodoManager {
     }
 
     public void addTask() {
-
+        //Ignored for simplicity
     }
 
     public void removeTask() {
-
+        //Ignored for simplicity
     }
 
     public void addStep(int taskId) {
-
+        //Ignored for simplicity
     }
 
     public void removeStep(int taskId, int stepId) {
-
+        //Ignored for simplicity
     }
 
     public void printTodo() {
